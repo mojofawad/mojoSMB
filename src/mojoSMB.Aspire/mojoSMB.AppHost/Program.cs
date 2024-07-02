@@ -1,8 +1,6 @@
-using Aspire.Hosting;
-
 var builder = DistributedApplication.CreateBuilder(args);
 
-builder.AddServiceDefaults();
+// builder.AddServiceDefaults();
 
 var api = builder.AddProject<Projects.mojoSMB_Api>("api");
 
