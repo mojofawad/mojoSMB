@@ -6,4 +6,8 @@
         <ImplicitUsings>enable</ImplicitUsings>
     </PropertyGroup>
 
+    <ItemGroup>
+      <ProjectReference Include="..\mojoSMB.Aspire\mojoSMB.ServiceDefaults\mojoSMB.ServiceDefaults.csproj" />
+    </ItemGroup>
+
 </Project>

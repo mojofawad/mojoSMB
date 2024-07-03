@@ -11,6 +11,7 @@
     <ItemGroup>
       <ProjectReference Include="..\..\mojoSMB.Api\mojoSMB.Api.csproj" />
       <ProjectReference Include="..\..\mojoSMB.Web\mojoSMB.Web.csproj" />
+      <ProjectReference Include="..\mojoSMB.ServiceDefaults\mojoSMB.ServiceDefaults.csproj" />
     </ItemGroup>
 
     <ItemGroup>
