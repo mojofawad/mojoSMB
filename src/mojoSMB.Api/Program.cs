@@ -1,9 +1,17 @@
+using Microsoft.EntityFrameworkCore;
+using mojoSMB.Api;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+
+builder.AddNpgsqlDbContext<ApiDbContext>("db", null,
+    optionsBuilder => optionsBuilder.UseNpgsql(npgsqlBuilder =>
+        npgsqlBuilder.MigrationsAssembly(typeof(Program).Assembly.GetName().Name)));
+
 
 var app = builder.Build();
 
