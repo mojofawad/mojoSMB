@@ -1,5 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 using mojoSMB.Api;
+using mojoSMB.ServiceDefaults;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -8,10 +9,11 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-builder.AddNpgsqlDbContext<ApiDbContext>("db", null,
+builder.AddNpgsqlDbContext<ApiDbContext>("apidb", null,
     optionsBuilder => optionsBuilder.UseNpgsql(npgsqlBuilder =>
         npgsqlBuilder.MigrationsAssembly(typeof(Program).Assembly.GetName().Name)));
 
+builder.AddServiceDefaults();
 
 var app = builder.Build();
 
