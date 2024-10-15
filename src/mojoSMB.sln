@@ -1,40 +1,32 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 17
-VisualStudioVersion = 17.0.31903.59
-MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "mojoSMB.Web", "mojoSMB.Web\mojoSMB.Web.csproj", "{F4CA52F6-2C46-479F-A91F-F845C279742E}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Shared", "Shared", "{14D446BA-5B90-492B-B27F-30900A443EF9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "mojoSMB.Api", "mojoSMB.Api\mojoSMB.Api.csproj", "{8885BE1F-9C66-41C5-AB6E-D73CC55B1F66}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "_mojoSMB", "_mojoSMB", "{4ABE089B-3D60-48C5-966E-46BCD3CAC559}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "mojoSMB.AppHost", "mojoSMB.Aspire\mojoSMB.AppHost\mojoSMB.AppHost.csproj", "{0A35F985-597A-417B-A885-3DE4BD932D71}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{4AE8FB62-E290-4631-8CBF-E0157117DBB1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "mojoSMB.ServiceDefaults", "mojoSMB.Aspire\mojoSMB.ServiceDefaults\mojoSMB.ServiceDefaults.csproj", "{C23E7994-C0A9-4DC7-BE81-DBEEB6D37450}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "mojoSMB.Tests", "..\tests\mojoSMB.Tests\mojoSMB.Tests.csproj", "{32E6855B-C901-407A-8631-0F65831D7EFC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "mojofawad.Shared", "..\..\mojofawad\src\mojofawad.Shared\mojofawad.Shared.csproj", "{D10FF399-D8C1-4268-971A-5B78E20C6A76}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
+	GlobalSection(NestedProjects) = preSolution
+		{32E6855B-C901-407A-8631-0F65831D7EFC} = {4AE8FB62-E290-4631-8CBF-E0157117DBB1}
+		{D10FF399-D8C1-4268-971A-5B78E20C6A76} = {14D446BA-5B90-492B-B27F-30900A443EF9}
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{F4CA52F6-2C46-479F-A91F-F845C279742E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F4CA52F6-2C46-479F-A91F-F845C279742E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F4CA52F6-2C46-479F-A91F-F845C279742E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F4CA52F6-2C46-479F-A91F-F845C279742E}.Release|Any CPU.Build.0 = Release|Any CPU
-		{8885BE1F-9C66-41C5-AB6E-D73CC55B1F66}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{8885BE1F-9C66-41C5-AB6E-D73CC55B1F66}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{8885BE1F-9C66-41C5-AB6E-D73CC55B1F66}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{8885BE1F-9C66-41C5-AB6E-D73CC55B1F66}.Release|Any CPU.Build.0 = Release|Any CPU
-		{0A35F985-597A-417B-A885-3DE4BD932D71}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{0A35F985-597A-417B-A885-3DE4BD932D71}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{0A35F985-597A-417B-A885-3DE4BD932D71}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{0A35F985-597A-417B-A885-3DE4BD932D71}.Release|Any CPU.Build.0 = Release|Any CPU
-		{C23E7994-C0A9-4DC7-BE81-DBEEB6D37450}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C23E7994-C0A9-4DC7-BE81-DBEEB6D37450}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C23E7994-C0A9-4DC7-BE81-DBEEB6D37450}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C23E7994-C0A9-4DC7-BE81-DBEEB6D37450}.Release|Any CPU.Build.0 = Release|Any CPU
+		{32E6855B-C901-407A-8631-0F65831D7EFC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{32E6855B-C901-407A-8631-0F65831D7EFC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{32E6855B-C901-407A-8631-0F65831D7EFC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{32E6855B-C901-407A-8631-0F65831D7EFC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D10FF399-D8C1-4268-971A-5B78E20C6A76}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D10FF399-D8C1-4268-971A-5B78E20C6A76}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D10FF399-D8C1-4268-971A-5B78E20C6A76}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D10FF399-D8C1-4268-971A-5B78E20C6A76}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
